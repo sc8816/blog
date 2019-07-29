@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ice-typescript-starter
 
 ## 使用
@@ -16,6 +17,6 @@
 - 通用组件: `src/components`
 - 页面文件: `src/pages`
 
-## 效果图
-
-![screenshot](https://img.alicdn.com/tfs/TB13AFlH6TpK1RjSZKPXXa3UpXa-2860-1580.png)
+=======
+# blog
+a react blog 
