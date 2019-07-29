@@ -1,0 +1,133 @@
+.indexCard {
+  margin-top: -50px;
+  padding-top: 20px;
+
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+
+    .card-content {
+      padding: 20px 40px;
+
+      .my-dream {
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        .title,
+        .music-player .title,
+        .video-player .title {
+          margin-bottom: 20px;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+        .text {
+          opacity: .6;
+          font-size: 1.1rem;
+        }
+      }
+
+      #recommend-sections {
+        margin-top: -30px;
+        padding-top: 30px;
+      }
+
+      .recommend {
+        .title {
+          margin-top: 25px;
+          margin-bottom: 25px;
+          text-align: center;
+          font-size: 1.8rem;
+          font-weight: 700;
+          line-height: 1.8rem;
+        }
+
+        .post-card {
+          position: relative;
+          width: 100%;
+          height: 300px;
+          max-height: 300px;
+          margin-bottom: 15px;
+          margin-top: 15px;
+          text-align: center;
+          border: 0;
+          border-radius: 10px;
+          color: rgba(0, 0, 0, .87);
+          background: #fff 50%;
+          background-size: cover;
+          box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+
+          &:before {
+            position: absolute;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            left: 0;
+            top: 0;
+            content: "";
+            background-color: rgba(0, 0, 0, .3);
+            border-radius: 10px;
+          }
+
+          a {
+            color: #fff !important;
+          }
+
+          .post-body {
+            position: relative;
+            margin: 0 auto;
+            padding: 1.8rem 1.25rem;
+            z-index: 2;
+          }
+
+          .post-description {
+            margin: 20px auto;
+            max-width: 500px;
+            height: 65px;
+            max-height: 65px;
+            font-size: 14px;
+            color: hsla(0, 0%, 100%, .78) !important;
+          }
+          .read-more {
+            height: 40px;
+            margin: .6rem 1px;
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 40px;
+            color: #fff;
+            border-radius: 30px;
+            box-shadow: 0 2px 2px 0 rgba(244, 67, 54, .14), 0 3px 1px -2px rgba(244, 67, 54, .2), 0 1px 5px 0 rgba(244, 67, 54, .12);
+
+            .icon {
+              font-size: 1.05rem;
+              padding-right: 10px;
+            }
+          }
+          .post-title {
+            height: 48px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+          }
+
+          .post-categories {
+            margin: 10px auto;
+
+            .category {
+              padding: 0 8px;
+              color: hsla(0, 0%, 100%, .7) !important;
+              font-size: .75rem;
+              font-weight: 500;
+            }
+
+          }
+        }
+      }
+
+      .iconfont {
+        font-size: inherit;
+      }
+
+    }
+  }
+}

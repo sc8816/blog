@@ -1,0 +1,35 @@
+.header {
+  z-index: 1000;
+
+  .bgColor {
+    background-image: linear-gradient(to right, rgb(76, 191, 48) 0%, rgb(15, 157, 88) 100%) !important;
+  }
+
+  .navTransparent {
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none;
+  }
+
+  .navContainer {
+    position: fixed;
+    min-width: 100%;
+    transition: .3s background ease-in;
+    display: flex;
+    justify-content: center;
+    height: 64px;
+  }
+
+  .headerLogo {
+    height: 45px;
+    vertical-align: middle;
+  }
+
+  .logoSpan {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    //font-weight: bold;
+  }
+
+
+}
