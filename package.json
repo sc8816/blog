@@ -5,10 +5,13 @@
   "dependencies": {
     "@types/react": "^16.8.3",
     "@types/react-dom": "^16.8.2",
+    "aos": "^3.0.0-beta.6",
     "moment": "^2.23.0",
     "prop-types": "^15.5.8",
+    "rc-queue-anim": "^1.6.12",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-masonry-component": "^6.2.1",
     "react-materialize": "^3.3.3",
     "react-router-dom": "^4.2.2",
     "water-wave": "^1.2.8"

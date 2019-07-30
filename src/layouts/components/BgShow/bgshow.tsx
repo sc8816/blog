@@ -32,12 +32,27 @@ export default function BgShow() {
                     <div className="red white-text bg-cover" key={`item${index}`}
                          style={{backgroundImage: 'url(' + item + ')'}}>
                         <div className="container">
-                            <h2>
-                                First Panel{item}
-                            </h2>
-                            <p>
-                                This is your first panel
-                            </p>
+                            <div className="row">
+                                <div className="col s10 offset-s1">
+                                    <div className="title center-align">一个极简的 Java ASCII 表格生成库</div>
+                                    <div className="description center-align">
+                                        一个轻量级、零依赖的 Java ASCII 表格生成库。
+                                        特性
+                                        轻量级、无依赖（jar包仅9kb）
+                                        API简单易用
+                                        易于集成或定制修改，仅一个Java文件，且代码规范
+
+                                        集成使用Maven集成&lt;dependency&gt;
+                                        &amp;l
+
+                                    </div>
+                                    <div className="cover-btns">
+                                        <a className="waves-effect waves-light btn" target="_blank">
+                                            <i className="icon fa fa-eye fa-fw"/>阅读更多
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 )

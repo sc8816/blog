@@ -25,6 +25,11 @@
   }
 }
 
+.bg-color {
+  background-image: linear-gradient(to right, rgb(76, 191, 48) 0%, rgb(15, 157, 88) 100%) !important;
+
+}
+
 #ice-container {
   height: 100vh;
   width: 100%;
@@ -33,6 +38,10 @@
     height: 100vh;
     width: 100%;
   }
+}
+
+.container.row {
+  margin-bottom: 0;
 }
 
 body {

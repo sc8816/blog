@@ -1,0 +1,26 @@
+.page-footer {
+  padding-bottom: 1px;
+
+  .copy-right {
+    color: #dbdbdb;
+  }
+
+  a {
+    color: #fff !important;
+  }
+
+  .container.row {
+    padding-bottom: 20px;
+  }
+
+  .social-statis {
+    margin-top: 10px;
+    position: relative;
+
+    a {
+      font-size: 1.2rem;
+      display: inline;
+      padding: 0 12px;
+    }
+  }
+}

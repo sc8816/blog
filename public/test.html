@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>瀑布流</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            position: relative;
+        }
+
+        .item {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: aliceblue;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            width: 205px;
+            position: absolute;
+        }
+
+        .item-1 {
+            background-color: rgb(206, 169, 169);
+            height: 300px;
+        }
+
+        .item-2 {
+            background-color: rgb(131, 226, 174);
+            height: 150px;
+        }
+
+        .item-3 {
+            background-color: rgb(77, 30, 30);
+            height: 350px;
+        }
+
+        .item-4 {
+            background-color: rgb(49, 62, 134);
+            height: 300px;
+        }
+
+        .item-5 {
+            background-color: rgb(230, 99, 99);
+            height: 200px;
+        }
+
+        .item-6 {
+            background-color: rgb(206, 169, 169);
+            height: 300px;
+        }
+
+        .item-7 {
+            background-color: rgb(124, 126, 145);
+            height: 400px;
+        }
+
+        .item-8 {
+            background-color: rgb(169, 199, 38);
+            height: 230px;
+        }
+
+        .item-9 {
+            background-color: rgb(114, 128, 53);
+            height: 300px;
+        }
+
+        .item-10 {
+            background-color: rgb(48, 54, 18);
+            height: 260px;
+        }
+
+        .item-11 {
+            background-color: rgb(118, 122, 96);
+            height: 230px;
+        }
+
+        .item-12 {
+            background-color: rgb(118, 122, 96);
+            height: 240px;
+        }
+
+        .item-13 {
+            background-color: rgb(118, 122, 96);
+            height: 250px;
+        }
+
+        .item-14 {
+            background-color: rgb(118, 122, 96);
+            height: 270px;
+        }
+
+        .item-15 {
+            background-color: rgb(118, 122, 96);
+            height: 330px;
+        }
+
+        .item-16 {
+            background-color: rgb(118, 122, 96);
+            height: 200px;
+        }
+
+        .item-17 {
+            background-color: rgb(118, 122, 96);
+            height: 100px;
+        }
+
+        .item-18 {
+            background-color: rgb(118, 122, 96);
+            height: 400px;
+        }
+
+        .item-19 {
+            background-color: rgb(118, 122, 96);
+            height: 340px;
+        }
+
+        .item-20 {
+            background-color: rgb(118, 122, 96);
+            height: 350px;
+        }
+
+        .item-21 {
+            background-color: rgb(118, 122, 96);
+            height: 360px;
+        }
+
+        .item-22 {
+            background-color: rgb(118, 122, 96);
+            height: 370px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="item item-1">1</div>
+    <div class="item item-2">2</div>
+    <div class="item item-3">3</div>
+    <div class="item item-4">4</div>
+    <div class="item item-5">5</div>
+    <div class="item item-6">6</div>
+    <div class="item item-7">7</div>
+    <div class="item item-8">8</div>
+    <div class="item item-9">9</div>
+    <div class="item item-10">10</div>
+    <div class="item item-11">11</div>
+    <div class="item item-12">12</div>
+    <div class="item item-13">13</div>
+    <div class="item item-14">14</div>
+    <div class="item item-15">15</div>
+    <div class="item item-16">16</div>
+    <div class="item item-17">17</div>
+    <div class="item item-18">18</div>
+    <div class="item item-19">19</div>
+    <div class="item item-20">20</div>
+    <div class="item item-21">21</div>
+    <div class="item item-22">22</div>
+</div>
+</body>
+<script>
+    // clientWidth 处理兼容性
+    function getClient() {
+        return {
+            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        }
+    }
+
+    // scrollTop兼容性处理
+    function getScrollTop() {
+        return window.pageYOffset || document.documentElement.scrollTop;
+    }
+
+    var items = document.getElementsByClassName('item');
+    console.log(items);
+    var gap = 10
+    window.onload = function () {
+        waterfall()
+    }
+    window.onresize = function () {
+        waterfall()
+    }
+
+    function waterfall() {
+        let pageWidth = getClient().width
+        let itemWidth = items[0].offsetWidth
+        let columns = parseInt(pageWidth / (itemWidth + gap));
+        let arr = [];//定义一个数组，用来存储元素的高度
+        for (let i = 0; i < items.length; i++) {
+            if (i < columns) {
+                items[i].style.top = 0
+                items[i].style.left = (itemWidth + gap) * i + 'px'
+                arr.push(items[i].offsetHeight)
+            } else {
+                let minHeight = arr[0]
+                let index = 0
+                for (let j = 0; j < arr.length; j++) {
+                    if (minHeight > arr[j]) {
+                        minHeight = arr[j]
+                        index = j
+                    }
+                }
+                items[i].style.top = arr [index] + gap + 'px'
+                items[i].style.left = items[index].offsetLeft + 'px'
+                arr[index] = arr[index] + items[i].offsetHeight + gap;
+            }
+        }
+    }
+</script>
+</html>
