@@ -1,17 +1,20 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './dashboard.scss'
 import RecommendBox from './components/RecommendBox/recommend-box'
 import ArticleBox from './components/ArticleBox/article-box'
-import {Card} from 'react-materialize'
+import {Card, Button} from 'react-materialize'
 import Masonry from 'react-masonry-component';
 import Pagination from '../../components/Pagination/pagination'
-import BaseFooter from '../../components/Footer/footer'
 
 const masonryOptions = {
     transitionDuration: 1000
 };
 const imagesLoadedOptions = {background: '.my-bg-image-el'}
 export default function Dashboard() {
+    useEffect(() => {
+        let elems = document.querySelectorAll('.fixed-action-btn');
+        M.FloatingActionButton.init(elems, {});
+    })
     return (
         <div className="dashboard">
             <div className="indexCard">
@@ -68,6 +71,19 @@ export default function Dashboard() {
                     </Masonry>
                 </div>
             </div>
+            <div className="fixed-action-btn">
+                <a className="btn-floating btn-large red">
+                    <i className="large fa fa-pencil"></i>
+                </a>
+                <ul>
+                    <li><a className="red btn-floating"><i className="fa fa-arrow-up"></i></a></li>
+                    <li><a className="btn-floating yellow darken-1"><i className="fa fa-thumbs-o-up"></i></a>
+                    </li>
+                    <li><a className="btn-floating green"><i className="fa fa-github"></i></a></li>
+                    <li><a className="btn-floating blue"><i className="fa fa-paperclip"></i></a></li>
+                </ul>
+            </div>
+
             {Pagination()}
         </div>
     );

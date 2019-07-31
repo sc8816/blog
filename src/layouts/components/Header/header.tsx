@@ -30,15 +30,17 @@ export default function Header(top: number) {
                     </a>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger button-collapse"><i
                         className="fa fa-navicon" onClick={show}/></a>
-                    <ul className="right hide-on-med-and-down">
+                    <ul className="right">
                         {MenuConfig.map((item, index) => {
                             return (
-                                <li className="waves-effect waves-light" key={index}><a>
+                                <li className="hide-on-med-and-down waves-effect waves-light" key={index}><a>
                                     <i className={`fa ${item.icon}`} style={{paddingRight: '3px'}}/>{item.title}</a>
                                 </li>
                             )
                         })}
-
+                        <li><a className="waves-effect waves-light">
+                            <i className="search fa fa-search" title="search"/>
+                        </a></li>
                     </ul>
                 </div>
             </nav>
