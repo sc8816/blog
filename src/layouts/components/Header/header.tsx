@@ -16,11 +16,6 @@ const show = () => {
     M.Sidenav.getInstance(document.querySelectorAll('#mobile-demo'));
 }
 export default function Header(top: number) {
-    useEffect(() => {
-        let elems = document.querySelectorAll('#mobile-demo');
-        // @ts-ignore
-        M.Sidenav.init(elems, {});
-    })
     return (
         <header className={`${styles.header} navbar-fixed`}>
             <nav className={`${styles.navTransparent} ${top >= 120 ? styles.bgColor : ''}`}>

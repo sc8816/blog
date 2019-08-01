@@ -26,7 +26,8 @@ export default function BgShow() {
                             onClick={() => instant.next()}>
                           <i className="icon fa fa-angle-right"></i>
                       </div>
-                  </div>} className="white-text center index-cover">
+                  </div>}
+                  className="white-text center index-cover" id="banner-show">
             {images.map((item, index) => {
                 return (
                     <div className="red white-text bg-cover" key={`item${index}`}
@@ -57,37 +58,6 @@ export default function BgShow() {
                     </div>
                 )
             })}
-
-            {/*<div className="amber white-text bg-cover">*/}
-            {/*    <div className="container">*/}
-            {/*        <h2>*/}
-            {/*            Second Panel*/}
-            {/*        </h2>*/}
-            {/*        <p>*/}
-            {/*            This is your second panel*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className="amber white-text bg-cover">*/}
-            {/*    <div className="container">*/}
-            {/*        <h2>*/}
-            {/*            Third Panel*/}
-            {/*        </h2>*/}
-            {/*        <p>*/}
-            {/*            This is your third panel*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<div className="amber white-text bg-cover">*/}
-            {/*    <div className="container">*/}
-            {/*        <h2>*/}
-            {/*            Fourth Panel*/}
-            {/*        </h2>*/}
-            {/*        <p>*/}
-            {/*            This is your fourth panel*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </Carousel>
     )
 }

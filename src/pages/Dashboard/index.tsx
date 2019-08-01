@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import './dashboard.scss'
 import RecommendBox from './components/RecommendBox/recommend-box'
 import ArticleBox from './components/ArticleBox/article-box'
-import {Card, Button} from 'react-materialize'
+import {Card} from 'react-materialize'
 import Masonry from 'react-masonry-component';
 import Pagination from '../../components/Pagination/pagination'
 

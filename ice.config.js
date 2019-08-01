@@ -1,5 +1,4 @@
 const path = require('path');
-const jquery = require('jquery')
 
 module.exports = {
     entry: 'src/index.tsx',
