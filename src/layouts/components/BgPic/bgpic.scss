@@ -148,7 +148,7 @@
 
   }
 
-  &.bg-cover:before, .bg-cover:after {
+  &.bg-cover:before, &.bg-cover:after {
     position: absolute;
     z-index: 1;
     width: 100%;

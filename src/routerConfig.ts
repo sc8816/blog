@@ -1,5 +1,7 @@
 import Dashboard from '@/pages/Dashboard';
 import BasicLayout from '@/layouts/BasicLayout';
+import Tags from '@/pages/Tags/tags'
+import ArticleList from '@/pages/Tags/components/ArticleList/articleList'
 
 const routerConfig = [
     {
@@ -13,6 +15,16 @@ const routerConfig = [
             {
                 path: '/',
                 redirect: '/dashboard',
+            },
+            {
+                path: '/tags',
+                component: Tags,
+                children: [
+                    {
+                        path: '/article',
+                        component: ArticleList,
+                    }
+                ]
             },
             {
                 path: '/category',
