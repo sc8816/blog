@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import Header from '../components/Header/header'
-// import ReactDOM from 'react-dom';
 import '../components/BgShow/bgshow.scss'
 import '../components/BgPic/bgpic.scss'
 import {Carousel} from 'react-materialize'
-import Footer from '../../components/Footer/footer'
+import Footer from '../components/Footer/footer'
 import useReactRouter from 'use-react-router';
 
 const images = [
@@ -49,12 +48,12 @@ export default function BasicLayout({children}) {
                               <div id="prev-cover"
                                    className="left waves-effect carousel-control"
                                    onClick={() => instant.prev()}>
-                                  <i className="icon fa fa-angle-left"></i>
+                                  <i className="icon fa fa-angle-left"/>
                               </div>
                               < div id="next-cover"
                                     className="right waves-effect carousel-control"
                                     onClick={() => instant.next()}>
-                                  <i className="icon fa fa-angle-right"></i>
+                                  <i className="icon fa fa-angle-right"/>
                               </div>
                           </div>}
                           className="white-text center index-cover"

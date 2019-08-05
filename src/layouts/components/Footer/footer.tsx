@@ -1,7 +1,6 @@
 import React from 'react'
 import './footer.scss'
 
-
 export default function BaseFooter() {
     return (
         <footer className="page-footer bg-color">

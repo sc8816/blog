@@ -1,13 +1,14 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 // @ts-ignore
 import styles from './header.module.scss'
 import {MenuConfig} from "../../../menuConfig";
 import './header.scss'
 
-const Logo = <div className="center">
-    <img src={require('../../../imgs/logo.png')} className={styles.headerLogo}/>
-    <span className={styles.logoSpan}>SC8816</span>
-</div>
+const Logo =
+    <div className="center">
+        <img src={require('../../../imgs/logo.png')} className={styles.headerLogo}/>
+        <span className={styles.logoSpan}>SC8816</span>
+    </div>
 
 // const Footer = <Icon type="search"><WaterWave press="down" color="#fff" effect="helix" duration={800}/></Icon>
 

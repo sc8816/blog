@@ -5,11 +5,10 @@ import 'aos/dist/aos.css';
 import './styles/main.scss'
 import './untils/clicklove'
 import '@/assets/materialize/sass/materialize.scss'
-import '@/assets/materialize/js/bin/materialize.min'
+import '@/assets/materialize/js/bin/materialize'
 import '@/assets/awesome/css/font-awesome.css'
 import router from './router';
 
-console.log(router());
 const ICE_CONTAINER = document.getElementById('ice-container');
 AOS.init();
 if (!ICE_CONTAINER) {
