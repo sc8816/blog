@@ -34,6 +34,74 @@
   height: 100vh;
   width: 100%;
 
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
+  }
+
+  .chip-container {
+    margin-top: -60px;
+
+    .tag-title {
+      margin-bottom: 10px;
+      color: #3C4858;
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
+
+    .tags-chip {
+      margin: 1rem auto 0.5rem;
+      max-width: 850px;
+      text-align: center;
+
+      .chip-default {
+        color: #34495e;
+
+        .tag-length {
+          color: #e91e63;
+        }
+
+      }
+
+      .chip-active {
+        color: #FFF !important;
+        background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
+        box-shadow: 2px 5px 10px #aaa !important;
+
+        .tag-length {
+          color: #fff;
+        }
+      }
+
+      .chip {
+        margin: 10px 10px;
+        padding: 0 14px;
+        display: inline-block;
+        height: 38px;
+        min-width: 80px;
+        line-height: 38px;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 5px;
+        word-wrap: break-word;
+        cursor: pointer;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
+
+        .tag-length {
+          margin-left: 5px;
+          margin-right: -2px;
+          font-size: 0.5rem;
+        }
+
+        &:hover {
+          color: #fff;
+          background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+        }
+
+      }
+    }
+  }
+
   .main-container {
     height: 100vh;
     width: 100%;

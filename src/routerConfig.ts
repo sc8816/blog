@@ -1,6 +1,7 @@
 import Dashboard from '@/pages/Dashboard';
 import BasicLayout from '@/layouts/BasicLayout';
 import Tags from '@/pages/Tags/tags'
+import Category from '@/pages/Category/category'
 import ArticleList from '@/pages/Tags/components/ArticleList/articleList'
 
 const routerConfig = [
@@ -28,7 +29,7 @@ const routerConfig = [
             },
             {
                 path: '/category',
-                component: Dashboard,
+                component: Category,
             }
         ],
     },
