@@ -29,7 +29,8 @@ export default function Header(top: number) {
                     <ul className="right">
                         {MenuConfig.map((item, index) => {
                             return (
-                                <li className="hide-on-med-and-down waves-effect waves-light" key={index}><a>
+                                <li className="hide-on-med-and-down waves-effect waves-light" key={index}
+                                ><a href={item.route}>
                                     <i className={`fa ${item.icon}`} style={{paddingRight: '3px'}}/>{item.title}</a>
                                 </li>
                             )
@@ -50,7 +51,7 @@ export default function Header(top: number) {
                     {MenuConfig.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className="waves-effect waves-light">
+                                <a className="waves-effect waves-light" href={item.route}>
                                     <i className={`fa ${item.icon}`} style={{paddingRight: '3px'}}/>{item.title}
                                 </a>
                             </li>

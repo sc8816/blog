@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import './category.scss'
 import echarts from 'echarts/lib/echarts';
-
 import'echarts/lib/chart/radar';
 import'echarts/lib/component/tooltip';
 import 'echarts/lib/component/title';
@@ -49,13 +48,13 @@ const option = {
     radar: [
         {
             indicator: [
-                {text: '前端', max: 8},
-                {text: '后端', max: 10},
-                {text: '数据库', max: 15},
-                {text: '设计', max: 10},
-                {text: 'Java', max: 11},
-                {text: 'C#', max: 6},
-                {text: 'go', max: 10}
+                {text: '前端', max: 16},
+                {text: '后端', max: 16},
+                {text: '数据库', max: 16},
+                {text: '设计', max: 16},
+                {text: 'Java', max: 16},
+                {text: 'C#', max: 16},
+                {text: 'go', max: 16}
             ],
             center: ['50%', '56%'],
             radius: 100

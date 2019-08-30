@@ -73,14 +73,14 @@ export default function Dashboard() {
             </div>
             <div className="fixed-action-btn">
                 <a className="btn-floating btn-large red">
-                    <i className="large fa fa-pencil"></i>
+                    <i className="large fa fa-pencil"/>
                 </a>
                 <ul>
-                    <li><a className="red btn-floating"><i className="fa fa-arrow-up"></i></a></li>
-                    <li><a className="btn-floating yellow darken-1"><i className="fa fa-thumbs-o-up"></i></a>
+                    <li><a className="red btn-floating"><i className="fa fa-arrow-up"/></a></li>
+                    <li><a className="btn-floating yellow darken-1"><i className="fa fa-thumbs-o-up"/></a>
                     </li>
-                    <li><a className="btn-floating green"><i className="fa fa-github"></i></a></li>
-                    <li><a className="btn-floating blue"><i className="fa fa-paperclip"></i></a></li>
+                    <li><a className="btn-floating green"><i className="fa fa-github"/></a></li>
+                    <li><a className="btn-floating blue"><i className="fa fa-paperclip"/></a></li>
                 </ul>
             </div>
 
