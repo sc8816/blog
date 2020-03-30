@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ice-typescript-starter
 
 ## 使用
@@ -20,3 +19,4 @@
 =======
 # blog
 a react blog 
+react hook 小尝试
